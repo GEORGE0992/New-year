@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New year</title>
+    <style>
+        
+            header{
+                text-align: center;
+                font-weight: lighter;
+                color: gold;
+                font-family: sans-serif;
+            }
+            footer{
+                text-align: center;
+                font-weight: lighter;
+                color: gold;
+                font-family: sans-serif;
+                font-size: 40px;
+            }
+        
+        body{
+            background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(images.jpeg);
+            background-position: center;
+            background-size: cover;
+            color: orange;
+        }
+        p{
+            text-align: center;
+            font-size: 80px;
+            font-weight: bolder;
+            margin-top: 100px;
+                  
+        }
+        a{
+            text-align:end;
+            color: orangered;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 13px;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+            display: block;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1><header>WISHING YOU A <span>HAPPY NEW YEAR</span> </header></h1>
+    <br>
+    <hr>
+        <p id="demo"></p>
+        <div class="container">
+        <section>
+             <address>
+            <a href="mailto: ndalugeorge2001@gmai.com"> &#9993: ndalugeorge2001@gmail.com</a> <br>
+             <a href="mailto: george.ndalu.001@gmail.com">&#x2709 : george.ndalu.001@gmail.com</a> <br>
+             <a href="tel: +254794711217">&#9742 : +254794711217</a> <br>
+             <a href="tel: +254114202255">&#x260E : +254114202255</a> <br>
+             <a href="map: webuye, Kenya">&#xe55f: webuye, Kenya</a><br>
+         </address>
+        </section>
+        </div>
+        <br>
+        <hr>
+        <footer>
+            Author: George ndalu
+            <h3>Copyright &copy;2025</h3>
+        </footer>
+    <script>
+        var countDownDate = new Date("Jan 01,2025 00:00:00").getTime();
+        var x = setInterval(function() {
+            var now = new Date () .getTime() ;
+            var distance = countDownDate - now ;
+            var days = Math.floor (distance /
+             (1000 * 60 * 60 *24 )) ;
+             var hours = Math.floor ((distance %
+             (1000 * 60 * 60 *24 )) / (1000 * 60 * 60)) ;
+             var minutes = Math.floor ((distance %
+             (1000 * 60 * 60 *24 )) / (1000 * 60 )) ;
+             var seconds = Math.floor (distance %
+             (1000 * 60 * 60 *24 )) / (1000 ) ;
+             document.getElementById("demo").innerHTML = days + "d: " +hours + "h: "
+             + minutes + "m: " + seconds + "s";
+             if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "HAPPY NEW YEAR"
+             }
+        }, 1000)
+    </script>
+</body>
+</html>
